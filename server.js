@@ -15,7 +15,8 @@ app.use(
 require("./backend/config/mongoose.config");
 
 //routes
-
+const appRoutes = require("./backend/router/productRoutes")
+appRoutes(app);
 
 //ejecutar server
 app.listen(8000,()=>console.log("Server On!!"))
